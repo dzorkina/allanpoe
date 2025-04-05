@@ -10,88 +10,89 @@
 </head>
 <body>
 
-    <header class="header">
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">☰</label>
+    <header class="header" role="banner">
+        <input type="checkbox" id="menu-toggle" aria-label="Toggle menu">
+        <label for="menu-toggle" class="menu-icon" aria-label="Open navigation menu">☰</label>
 
-
-        <nav class="nav-links">
-            <a href="index.html" class="nav-item">Home</a>
-            <a href="works.html" class="nav-item">Works</a>
-            <a href="legacy.html" class="nav-item">Legacy</a>
+        <nav class="nav-links" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="nav-item" aria-label="Go to home page">Home</a>
+            <a href="works.html" class="nav-item" aria-label="View works of Edgar Allan Poe">Works</a>
+            <a href="legacy.html" class="nav-item" aria-label="Learn about Edgar Allan Poe's legacy">Legacy</a>
         </nav>
-        <div class="logo">Edgar Allan Poe</div>
 
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <img src="image.png" alt="Search Icon" class="search-icon">
+        <div class="logo" aria-label="Edgar Allan Poe's Website">Edgar Allan Poe</div>
+
+        <div class="search-bar" aria-label="Search for content on this website">
+            <input type="text" placeholder="Search..." aria-label="Search input field">
+            <img src="image.png" alt="Search Icon" class="search-icon" aria-label="Search icon">
         </div>
     </header>
 
-    <main class="influence-page">
-        <div class="image-box">
+    <main class="influence-page" role="main">
+        <div class="image-box" aria-label="Raven perched on a branch">
             <img src="raven-branch1.png" alt="Raven on Branch" class="raven-top-left">
         </div>
 
-        <section class="influence-section">
+        <section class="influence-section" aria-labelledby="influence-section-1">
             <div class="text-with-image">
                 <div class="text-box">
-                    <p>Despite his relatively brief and undeniably troubled life, Edgar Allan Poe’s impact on American literature 
+                    <p id="influence-section-1">Despite his relatively brief and undeniably troubled life, Edgar Allan Poe’s impact on American literature 
                         and the wider world of fiction and poetry has been nothing short of profound. His body of work continues to be celebrated and studied 
                         for its dark beauty, psychological depth, and enduring exploration of human fears and desires, of which, many are still relatable today 
                         as they were when he first penned them, all those years ago.
                     </p>
                 </div>
-                <div class="image-box">
+                <div class="image-box" aria-label="Edgar Allan Poe surrounded by ravens">
                     <img src="poe-ravens.png" alt="Poe with Ravens">
                 </div>
             </div>
         </section>
 
-        <section class="influence-section">
+        <section class="influence-section" aria-labelledby="influence-section-2">
             <div class="text-c">
-                    <p>His legacy endures in the countless authors, poets, artists and creatives who have drawn inspiration from his innovative storytelling and exploration of dark themes. 
-                        His influence on American literature and the broader literary world remains undeniably significant, with Poe being credited as a direct inspiration for H.P Lovecraft, 
+                    <p id="influence-section-2">His legacy endures in the countless authors, poets, artists, and creatives who have drawn inspiration from his innovative storytelling and exploration of dark themes. 
+                        His influence on American literature and the broader literary world remains undeniably significant, with Poe being credited as a direct inspiration for H.P. Lovecraft, 
                         who himself would go on to inspire Stephen King. Edgar’s legacy, while impossible to know at the time he was alive, would birth titans of the genre he himself loved and 
-                        was fascinated by. There is a strange, twisted beauty to this that I’m sure Poe would have appreciated.</p>
+                        was fascinated by. There is a strange, twisted beauty to this that I’m sure Poe would have appreciated.
+                    </p>
                 </div>
-                <div class="image-box">
+                <div class="image-box" aria-label="Raven perched on a branch">
                     <img src="raven-branch.png" alt="Raven on Branch" class="raven-bottom-right">
                 </div>
             </div>
         </section>
     </main>
 
-    <div class="footer-quote-section">
-        <p class="footer-quote">"All that we see or seem is but a dream within a dream." <br> ~ Edgar Allan Poe</p>
+    <div class="footer-quote-section" aria-labelledby="footer-quote">
+        <p id="footer-quote" class="footer-quote">"All that we see or seem is but a dream within a dream." <br> ~ Edgar Allan Poe</p>
     </div>
     
-    <footer class="footer">
+    <footer class="footer" role="contentinfo" aria-label="Website footer with contact information and links">
         <div class="footer-container">
             <div class="footer-left">
                 <h2>Edgar Allan Poe</h2>
                 <p class="contact-title">Contact</p>
                 <p>Phone: 804-648-5523</p>
-                <p>Email: <a href="mailto:info@poemuseum.org">info@poemuseum.org</a></p>
+                <p>Email: <a href="mailto:info@poemuseum.org" aria-label="Send an email to info@poemuseum.org">info@poemuseum.org</a></p>
             </div>
     
             <div class="footer-center">
                 <div class="footer-links">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="works.html">Works</a></li>
-                        <li><a href="legacy.html">Legacy</a></li>
+                        <li><a href="index.html" aria-label="Go to home page">Home</a></li>
+                        <li><a href="works.html" aria-label="View works of Edgar Allan Poe">Works</a></li>
+                        <li><a href="legacy.html" aria-label="Learn about Edgar Allan Poe's legacy">Legacy</a></li>
                     </ul>
                     <ul>
-                        <li><a href="https://poemuseum.org/the-museum/">The Museum</a></li>
-                        <li><a href="https://shop.poemuseum.org/">Shop</a></li>
-                        <li><a href="https://edgarallanpoemuseum.humanitru.com/donate">Donate</a></li>
-                        <li><a href="https://poemuseum.org/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://poemuseum.org/the-museum/" target="_blank" rel="noopener noreferrer" aria-label="Visit Poe Museum">The Museum</a></li>
+                        <li><a href="https://shop.poemuseum.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit Poe Museum Shop">Shop</a></li>
+                        <li><a href="https://edgarallanpoemuseum.humanitru.com/donate" target="_blank" rel="noopener noreferrer" aria-label="Donate to Poe Museum">Donate</a></li>
+                        <li><a href="https://poemuseum.org/privacy-policy/" target="_blank" rel="noopener noreferrer" aria-label="Read privacy policy">Privacy Policy</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">Our Rentals</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Our Blog</a></li>
+                        <li><a href="#" aria-label="Learn about our rentals">Our Rentals</a></li>
+                        <li><a href="#" aria-label="Meet our team">Our Team</a></li>
+                        <li><a href="#" aria-label="Read our blog">Our Blog</a></li>
                     </ul>
                 </div>
             </div>

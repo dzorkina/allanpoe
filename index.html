@@ -8,39 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Taprom&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Taprom&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        
+    <header class="header" role="banner">
         <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">☰</label>
-
-        <nav class="nav-links">
-            <a href="index.html" class="nav-item">Home</a>
-            <a href="works.html" class="nav-item">Works</a>
-            <a href="legacy.html" class="nav-item">Legacy</a>
+        <label for="menu-toggle" class="menu-icon" aria-label="Open navigation menu">☰</label>
+        <nav class="nav-links" role="navigation">
+            <a href="index.html" aria-label="Go to Home Page" class="nav-item">Home</a>
+            <a href="works.html" aria-label="Explore Edgar Allan Poe's Works" class="nav-item">Works</a>
+            <a href="legacy.html" aria-label="Learn About Edgar Allan Poe's Legacy" class="nav-item">Legacy</a>
         </nav>
-        
         <div class="logo">Edgar Allan Poe</div>
-        
         <div class="search-bar">
             <input type="text" placeholder="Search...">
-            <img src="image.png" alt="Search Icon" class="search-icon">
+            <img src="image.png" alt="Search Icon" class="search-icon" aria-label="Search">
         </div>
     </header>
 
     <div class="content-wrapper">
         <div class="quote-container">
-            <p class="quote">
-                “ Those who dream by day are cognisant of many things which escape those who dream only by night ”
-            </p>
+            <p class="quote">“ Those who dream by day are cognisant of many things which escape those who dream only by night ”</p>
             <p class="quote-author">~ from Eleonora, 1841</p>
         </div>
-    
-    
-        <section class="content-section">
+
+        <section class="content-section" role="main">
             <div class="text-container">
                 <p>
                     <strong>Edgar Allan Poe</strong> was an American writer, poet, and literary critic, 
@@ -54,10 +46,9 @@
                     October 7, 1849, leaving behind a legacy that continues to influence writers and artists today.
                 </p>
             </div>
-    
-            
+        
             <div class="image-container">
-                <img src="image copy.png" alt="Illustration of Edgar Allan Poe">
+                <img src="image copy.png" alt="Illustration of Edgar Allan Poe, author and poet">
             </div>
         </section>
     </div>
@@ -83,43 +74,42 @@
         </div>
     </section>
 
+    <div class="footer-quote-section">
+        <p class="footer-quote">"All that we see or seem is but a dream within a dream." <br> ~ Edgar Allan Poe</p>
+    </div>
 
-<div class="footer-quote-section">
-    <p class="footer-quote">"All that we see or seem is but a dream within a dream." <br> ~ Edgar Allan Poe</p>
-</div>
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>Edgar Allan Poe</h2>
+                <p class="contact-title">Contact</p>
+                <p>Phone: 804-648-5523</p>
+                <p>Email: <a href="mailto:info@poemuseum.org" aria-label="Send an email to info@poemuseum.org">info@poemuseum.org</a></p>
+            </div>
 
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-left">
-            <h2>Edgar Allan Poe</h2>
-            <p class="contact-title">Contact</p>
-            <p>Phone: 804-648-5523</p>
-            <p>Email: <a href="mailto:info@poemuseum.org">info@poemuseum.org</a></p>
-        </div>
-
-        <div class="footer-center">
-            <div class="footer-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="works.html">Works</a></li>
-                    <li><a href="legacy.html">Legacy</a></li>
-                </ul>
-                <ul>
-                    <li><a href="https://poemuseum.org/the-museum/">The Museum</a></li>
-                    <li><a href="https://shop.poemuseum.org/">Shop</a></li>
-                    <li><a href="https://edgarallanpoemuseum.humanitru.com/donate">Donate</a></li>
-                    <li><a href="https://poemuseum.org/privacy-policy/">Privacy Policy</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Our Rentals</a></li>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="#">Our Blog</a></li>
-                </ul>
+            <div class="footer-center">
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html" aria-label="Go to Home Page">Home</a></li>
+                        <li><a href="works.html" aria-label="Explore Edgar Allan Poe's Works">Works</a></li>
+                        <li><a href="legacy.html" aria-label="Learn About Edgar Allan Poe's Legacy">Legacy</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://poemuseum.org/the-museum/" target="_blank" rel="noopener noreferrer" aria-label="Visit The Museum">The Museum</a></li>
+                        <li><a href="https://shop.poemuseum.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Poe Museum Shop">Shop</a></li>
+                        <li><a href="https://edgarallanpoemuseum.humanitru.com/donate" target="_blank" rel="noopener noreferrer" aria-label="Donate to Poe Museum">Donate</a></li>
+                        <li><a href="https://poemuseum.org/privacy-policy/" target="_blank" rel="noopener noreferrer" aria-label="Read our privacy policy">Privacy Policy</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Our Rentals</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Our Blog</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-
+    </footer>
 </body>
 </html>
+
 
