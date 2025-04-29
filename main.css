@@ -564,6 +564,65 @@
     display: inline-block;
 }
 
+.footer-credits {
+    font-size: 0.65rem;
+    text-align: center;
+    opacity: 0.6;
+    padding: 1vh 2vw;
+    max-width: 90%;
+    margin: 2vh auto 1vh;
+  }
+
+/*Privacy policy page*/
+
+  .privacy-policy {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+  }
+  
+  .privacy-policy h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .privacy-policy p {
+    margin-bottom: 20px;
+  }
+  
+  /* Mobile Optimizations */
+  @media (max-width: 768px) {
+    .privacy-policy {
+      padding: 15px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  
+    .privacy-policy h1 {
+      font-size: 2em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .privacy-policy {
+      padding: 10px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  
+    .privacy-policy h1 {
+      font-size: 1.8em;
+    }
+  }
+  
+
 
 @media (max-width: 1600px) {
     .quote-container {
@@ -887,6 +946,12 @@
         line-height: 1.6;
     
     }
+
+    .footer-credits {
+        font-size: 1.5vw;
+        max-width: 100%;
+        margin: 0.3rem auto;
+      }
 
 }
 
@@ -1605,6 +1670,15 @@
     .footer-quote {
         font-size: 15px;
     }
+    
+    .footer-credits {
+        font-size: 0.65rem;
+        text-align: center;
+        opacity: 0.6;
+        padding: 1vh 2vw;
+        max-width: 90%;
+        margin: 2vh auto 1vh;
+      }
 
 }
 
